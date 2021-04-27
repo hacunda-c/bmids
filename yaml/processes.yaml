@@ -1,0 +1,8 @@
+# processes.yaml file
+processes:
+  - entry: ed
+    present: no
+    alert: critical
+  - entry: init
+    present: yes
+    alert: none

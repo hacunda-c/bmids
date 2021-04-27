@@ -1,0 +1,29 @@
+# files.yaml config file
+files:
+  - entry: /var/tmp/test_file
+    type: file
+    mode: 0755
+    owner: root
+    group: daemon
+    create: none
+    delete: critical
+    modified: warn
+    move: critical
+  - entry: /var/tmp/test_file2
+    type: file
+    mode: 0550
+    owner: chris
+    group: chris
+    create: none
+    delete: critical
+    modified: warn
+    move: critical
+  - entry: /var/tmp/test_dir
+    type: dir
+    mode: 0777
+    owner: chris
+    group: docker
+    create: none
+    delete: critical
+    modified: warn
+    move: critical

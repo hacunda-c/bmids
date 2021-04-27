@@ -1,0 +1,8 @@
+# ports.yaml config file
+ports:
+  - port: 22
+    open: yes
+    alert: critical
+  - port: 80
+    open: no
+    alert: warn
